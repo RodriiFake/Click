@@ -8,7 +8,7 @@ class Users:
 
     @staticmethod
     def browse_user(id_user):
-        browse_user_query="""selesct * from users where id_user ={id_user}""".format(id_user=id_user)
+        browse_user_query="""select * from users where id_user ={id_user}""".format(id_user=id_user)
         db = DataBase()
         ps_connection = db.session()
         ps_cursor = ps_connection.cursor()
